@@ -12,20 +12,20 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    height: 100svh;
+	height: 100svh;
 }
 
 .img-desktop {
-    display: none;
+	display: none;
 }
 
 .main {
-    max-width: 23.5rem;
+	max-width: 23.5rem;
 }
 
 .section-one {
-    background-color: hsl(0, 0%, 100%);
-    transition: opacity 0.8s;
+	background-color: hsl(0, 0%, 100%);
+	transition: opacity 0.8s;
 }
 
 .content-section {
@@ -64,141 +64,134 @@ body {
 }
 
 .form-label {
-    font-size: 0.8rem;
-    font-weight: bold;
+	font-size: 0.8rem;
+	font-weight: bold;
 }
 
 .error-msg {
 	text-align: right;
 	color: hsl(4, 100%, 67%);
-    font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
 .form-input {
 	grid-column: span 2 / span 2;
-    padding: 1rem;
-    border: solid 1px hsl(231, 7%, 60%);
-    border-radius: 8px;
+	padding: 1rem;
+	border: solid 1px hsl(231, 7%, 60%);
+	border-radius: 8px;
 }
 
-
-
 .error-input {
-    background-color: hsl(3, 70%, 89%);
-    border: solid 1px hsl(4, 100%, 67%);
+	background-color: hsl(3, 70%, 89%);
+	border: solid 1px hsl(4, 100%, 67%);
 }
 
 .error-input::placeholder {
-    color: hsl(4, 100%, 67%);
+	color: hsl(4, 100%, 67%);
 }
 
 .send-btn {
-    grid-column: span 2 / span 2;
+	grid-column: span 2 / span 2;
 	grid-row-start: 3;
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .btn {
-    padding: 1rem;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(234, 29%, 20%);
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: bold;
-    transition: background-color 0.3s, box-shadow 0.3s;
+	padding: 1rem;
+	border: none;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(234, 29%, 20%);
+	border-radius: 8px;
+	cursor: pointer;
+	width: 100%;
+	font-weight: bold;
+	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-    background-color: hsl(4, 100%, 67%);
-    box-shadow: 10px 25px 44px -15px hsl(4, 100%, 67%);
+	background-color: hsl(4, 100%, 67%);
+	box-shadow: 10px 25px 44px -15px hsl(4, 100%, 67%);
 }
 
 .section-two {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-300%);
-    height: 70svh;
-    width: 23rem;
-    padding: 2rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 12px;
-    transition: transform 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -300%);
+	height: 70svh;
+	width: 23rem;
+	padding: 2rem;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 12px;
+	transition: transform 0.5s;
 }
 
 .title-two {
-    margin-top: 1.4rem;
-    font-size: 2.3rem;
-    line-height: 90%;
-    
+	margin-top: 1.4rem;
+	font-size: 2.3rem;
+	line-height: 90%;
 }
 
 .description-two {
-    margin-top: 1.4rem;
-    font-size: 0.8rem;
-    line-height: 150%;
+	margin-top: 1.4rem;
+	font-size: 0.8rem;
+	line-height: 150%;
 }
 
 .description-two span {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .close-btn {
-    margin-top: 20rem;
+	margin-top: 15rem;
 }
 
 .active {
-    transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
 
 @media (min-width: 768px) {
-    .img-mobile {
-        display: none;
-    }
+	.img-mobile {
+		display: none;
+	}
 
-    .img-desktop {
-        display: block;
-        max-width: 100%;
-        padding: 1rem;
-    }
+	.img-desktop {
+		display: block;
+		max-width: 100%;
+		padding: 1rem;
+	}
 
-    .main {
-        max-width: 100%;
-        border-radius: 25px;
-    }
+	.main {
+		max-width: 100%;
+		border-radius: 25px;
+	}
 
-    .section-one {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-        border-radius: 30px;
-        box-shadow: 8px 8px 24px 0px rgb(17, 18, 22);
-    }
+	.section-one {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row-reverse;
+		border-radius: 30px;
+		box-shadow: 8px 8px 24px 0px rgb(17, 18, 22);
+	}
 
-    
+	.section-two {
+		height: 100svh;
+	}
 
-    .section-two {
-        height: auto;
-    }
+	.close-btn {
+		margin-top: 2rem;
+	}
 
-    .close-btn {
-        margin-top: 2rem;
-    }
+	.content-section {
+		margin: 4rem;
+	}
 
-    .content-section {
-        margin: 4rem;
-    }
-
-    .title {
-        font-size: 3.5rem;
-    }
-
-    
+	.title {
+		font-size: 3.5rem;
+	}
 }
