@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <div class="section-one">
+      <section class="image-section">
+        <img class="img img-mobile" src="./img/illustration-sign-up-mobile.svg" alt="Ilustration sign up">
+        <img class="img img-desktop" src="./img/illustration-sign-up-desktop.svg" alt="Ilustration sign up">
+      </section>
+
+      <section class="content-section">
+        <h1 class="title">Stay updated!</h1>
+        <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <img class="feature-icon" src="./img/icon-list.svg" alt="icon list">
+            <span class="feature-text">Product discovery and building what matters</span>
+          </div>
+          <div class="feature-item">
+            <img class="feature-icon" src="./img/icon-list.svg" alt="icon-list">
+            <span class="feature-text">Measuring to ensure updates are a success</span>
+          </div>
+          <div class="feature-item">
+            <img class="feature-icon" src="./img/icon-list.svg" alt="icon-list">
+            <span class="feature-text">And much more!</span>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <label class="form-label" for="mail">Email address</label>
+          <p class="error-msg"></p>
+          <input class="form-input" type="email" id="mail" placeholder="email@company.com">
+          <button class="btn send-btn">Subscribe to monthly newsletter</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="section-two">
+        <img src="./img/icon-success.svg" alt="icon-success">
+        <h2 class="title-two">Thanks for subscribing!</h2>
+        <p class="description-two">A confirmation email has been sent to <span>ash@loremcompany.com</span>. 
+          Please open it and click the button inside to confirm your subscription.</p>
+        <button class="btn close-btn">Dismiss message</button>  
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
