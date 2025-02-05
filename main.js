@@ -4,6 +4,7 @@ const sectionOne = document.querySelector('.section-one')
 const sectionTwo = document.querySelector('.section-two')
 const sendBtn = document.querySelector('.send-btn')
 const closeBtn = document.querySelector('.close-btn')
+const emailSpan = document.querySelector('.description-two span')
 
 const isValidEmail = email => {
 	const re =
@@ -18,6 +19,7 @@ const checkInput = () => {
 		sectionOne.style.opacity = '0'
 		sectionTwo.classList.add('active')
         errorMsg.textContent = ''
+		emailSpan.textContent = emailValue
 	} else {
         errorMsg.textContent = 'Valid email requaired!'
         mail.classList.add('error-input')

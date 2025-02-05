@@ -154,6 +154,8 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+
+
 @media (min-width: 768px) {
 	.img-mobile {
 		display: none;
@@ -180,7 +182,7 @@ body {
 	}
 
 	.section-two {
-		height: 100svh;
+		height: 30svh;
 	}
 
 	.close-btn {
@@ -188,10 +190,16 @@ body {
 	}
 
 	.content-section {
-		margin: 4rem;
+		padding: 2rem;
 	}
 
 	.title {
 		font-size: 3.5rem;
+	}
+}
+
+@media(min-width: 992px) {
+	.content-section {
+		margin: 4rem;
 	}
 }
